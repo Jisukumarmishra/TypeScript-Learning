@@ -8,7 +8,8 @@ function App() {
     <>
     <div>
       <h1>Vite + React </h1>
-      <UserCard name="HeadPhones" price= "5000" />
+      <UserCard name="HeadPhones" price= {5000} />
+       <UserCard name="Iphones" price= {8000} />
     </div>
     </>
   )

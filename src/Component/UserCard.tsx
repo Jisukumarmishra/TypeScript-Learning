@@ -1,4 +1,10 @@
-export function UserCard({name, price, isSpecial = false }) {
+interface userCardProps {
+  name: string;
+  price: number;
+  isSpecial?: boolean;
+}
+
+export function UserCard({name, price, isSpecial = false }: userCardProps) {
   return (
      <article>
       <h2>
