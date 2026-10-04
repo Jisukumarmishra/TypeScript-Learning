@@ -1,4 +1,4 @@
-import React from 'react'
+
 import type { user } from '../Types'
 import { UserCard } from './UserCard'
 
