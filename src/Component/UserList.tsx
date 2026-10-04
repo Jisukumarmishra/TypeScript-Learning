@@ -13,8 +13,8 @@ export function UserList ({items} : UserListProps)  {
         <UserCard
         key={user.id }
         name={user.name}
-        price={user.price}
-        isSpecial={user.price > 30}
+        price={user.age}
+        isSpecial={user.age > 30}
         />
       ))}
     </div>
