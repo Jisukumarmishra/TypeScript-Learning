@@ -1,9 +1,11 @@
 import { useState } from "react"
 
 interface OrderFormProps {
-  onSubmit(order: {name:string; age; number}); void
+  onSubmit(order: {name:string; age: number}): void
 }
-export function OrderFrom() {
+export function OrderFrom({onSubmit}: OrderFormProps) {
+  const [name, setName] = useState<string>("Jisu");
+  const [age, setAge] = useState<number>(1)
   return (
     <div>OrderFrom</div>
   )
