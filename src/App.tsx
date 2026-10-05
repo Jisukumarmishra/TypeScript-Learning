@@ -1,5 +1,6 @@
 import './App.css'
 import { Counter } from './Component/Counter.tsx'
+import { OrderFrom } from './Component/AgeForms.tsx'
 import { UserCard } from './Component/UserCard.tsx'
 import UserList from './Component/UserList.tsx'
 import type { user } from './Types.ts'
@@ -24,6 +25,13 @@ function App() {
     </div>
     <div>
       <UserList items={list}/>
+    </div>
+    <div>
+      <OrderFrom
+      onSubmit={(age) => {
+        console.log("age is", age.name, age.age)
+      }}
+      />
     </div>
     </>
   )
