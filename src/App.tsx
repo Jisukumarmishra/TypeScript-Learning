@@ -4,6 +4,7 @@ import { OrderFrom } from './Component/AgeForms.tsx'
 import { UserCard } from './Component/UserCard.tsx'
 import UserList from './Component/UserList.tsx'
 import type { user } from './Types.ts'
+import { Card } from './Component/Card.tsx'
 
 const list: user[] = [
   {id: 1, name:"Jisu", age: 21},
@@ -31,6 +32,12 @@ function App() {
       onSubmit={(age) => {
         console.log("age is", age.name, age.age)
       }}
+      />
+    </div>
+    <div>
+      <Card
+      title='Jisu Learn TypeScript'
+      footer={<button>Learn TypeScript</button>}
       />
     </div>
     </>
