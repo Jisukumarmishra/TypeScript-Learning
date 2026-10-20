@@ -6,3 +6,6 @@ npm create vite@latest .
 
 - children is special props types in reat expecailly used int nextjs
 - jo bhi html element hote hai vo react node hote hai
+
+// the main goal of interface is give the shape of the object/ data
+// interface always define the structure of the object;
