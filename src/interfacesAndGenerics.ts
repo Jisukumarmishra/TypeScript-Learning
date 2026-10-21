@@ -29,7 +29,7 @@ const apply50: discountCalculator = (p) => p * 0.5
 
 
 interface TeaMachine {
-  start(): void;
+  start(): void; // both are the index signature
   stop() : void;
 }
 
@@ -40,4 +40,14 @@ const machine: TeaMachine = {
   stop() {
     console.log("stop");
   }
+}
+
+
+interface ChaiRatings {
+  [flavor: string]: number
+}
+
+const rating: ChaiRatings = {
+  masala: 4.5,
+  ginger: 4.5,
 }
