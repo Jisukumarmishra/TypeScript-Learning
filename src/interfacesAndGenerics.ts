@@ -26,3 +26,18 @@ interface discountCalculator {
 }
 
 const apply50: discountCalculator = (p) => p * 0.5
+
+
+interface TeaMachine {
+  start(): void;
+  stop() : void;
+}
+
+const machine: TeaMachine = {
+  start() {
+    console.log("start");
+  },
+  stop() {
+    console.log("stop");
+  }
+}
