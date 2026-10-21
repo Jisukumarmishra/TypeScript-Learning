@@ -51,3 +51,18 @@ const rating: ChaiRatings = {
   masala: 4.5,
   ginger: 4.5,
 }
+
+// merging of interface features : at whenever any functions  is defined its follow the defined all interface structure
+
+interface User {
+  name:string;
+}
+
+interface User {
+  age: number
+}
+
+const u: User = {
+  name: "Jisu",
+  age:21
+}
