@@ -66,3 +66,15 @@ const u: User = {
   name: "Jisu",
   age:21
 }
+
+// extending of interface
+interface A {
+  a:string,
+}
+interface B {
+  b:string,
+}
+
+interface C extends A, B {
+  // write the structure of the object
+}
