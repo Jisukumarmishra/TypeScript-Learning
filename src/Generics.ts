@@ -17,3 +17,9 @@ function pair<A, B>(a: A, b:B): [A, B]{
 pair("Hello", 42);
 pair("World", { name: "Alice" });
 pair({ name: "Alice" }, [1, 2, 3]);
+
+
+// Add Generics Interfaces
+interface Box<T> {
+  content: T;
+}
