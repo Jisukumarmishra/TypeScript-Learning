@@ -3,3 +3,7 @@
 function wrapInArray<T>(item: T): T[] {
   return [item];
 }
+
+wrapInArray("Hello");
+wrapInArray(42);
+wrapInArray({ name: "Alice", age: 30 });
