@@ -23,3 +23,20 @@ pair({ name: "Alice" }, [1, 2, 3]);
 interface Box<T> {
   content: T;
 }
+
+const numberBox:Box<number> = { content: 42 };
+const numberBoxCup:Box<string> = { content: "42" };
+
+// real life example of generics is api responses form state of react component and also in react hooks like useState, useEffect, useReducer, useContext, useMemo, useCallback, useRef, useImperativeHandle, useLayoutEffect, useDebugValue, useDeferredValue, useTransition, useId, useSyncExternalStore, useInsertionEffect
+
+interface ApiResponse<T> {
+  data: T;
+  status: number;
+  message: string;
+}
+
+const res:ApiResponse<{ name: string; age: number }> = {
+  status: 200,
+  data: { name: "Alice", age: 30 },
+  message: "Success"
+};
