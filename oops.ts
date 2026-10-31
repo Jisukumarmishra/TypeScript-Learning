@@ -1,5 +1,5 @@
 class User {
-  name: string:
+  name: string;
   age: number
 
   // recommnended (inside class making a constructor)
@@ -10,6 +10,7 @@ class User {
 
   constructor(name:string, age: number) {
     this.name = name;
+    this.age = age;
     // this := it is refer to the new object
     console.log(this);
   }
@@ -95,4 +96,28 @@ class ModernUser {
 
 const modernUser = new ModernUser();
 modernUser.name = "Jisu"; // ok
-// modernUser.name = "Ji"; // error: Name is too short
+// modernUser.name = "Ji"; // error: Name is too short  
+
+
+
+
+// static properties and methods
+
+class  newUser3 {
+ static newUserCount = 0;
+
+ constructor(public name: string, public age: number) {}
+}
+console.log(newUser3.newUserCount);
+
+abstract class Animal {
+  abstract makeSound(): void;
+  abstract name: string;
+  abstract age: number;   
+}
+
+class Dog extends Animal {
+    makeSound() {
+  console.log("Woof!");
+ } 
+}
