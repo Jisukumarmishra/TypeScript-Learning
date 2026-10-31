@@ -62,3 +62,13 @@ class Wallet {
 }
 
 const w = new Wallet();
+
+// readonly properties
+
+class Cup {
+  readonly capacity: number = 500
+
+  constructor(capacity: number) {
+    this.capacity = capacity;
+  }
+}
