@@ -72,3 +72,27 @@ class Cup {
     this.capacity = capacity;
   }
 }
+
+// controlled access
+
+class ModernUser {
+  private _name = "Jisu";
+
+  get name() {
+    return this._name;
+  }
+
+  set name (value: string) {
+    if (value.length < 3) {
+      throw new Error("Name is too short");
+    }
+    this._name = value;
+
+  }
+}
+
+// uses of above getter and setter
+
+const modernUser = new ModernUser();
+modernUser.name = "Jisu"; // ok
+// modernUser.name = "Ji"; // error: Name is too short
