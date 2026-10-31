@@ -121,3 +121,19 @@ class Dog extends Animal {
   console.log("Woof!");
  } 
 }
+
+// composition over inheritance
+
+class goddHeartPerson {
+  heart() {
+  
+  }
+}
+
+class goodMindPerson {
+  constructor(private heart: goddHeartPerson) {} 
+
+  makeGoodDecision() {
+    this.heart.heart(); // this is composition, we are using the heart of the goodHeartPerson class in the goodMindPerson class
+  }
+}
