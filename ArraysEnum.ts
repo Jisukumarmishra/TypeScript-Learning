@@ -42,5 +42,16 @@ const location: readonly [number, number] = [19.0760, 72.8777]; // readonly tupl
 
 const userDetails: [name: string, age: number, isAdmin: boolean, location?: string] = ["Jisu", 21, true, "Delhi"]; // more preferred way to define tuple in typescript
 
+// enum :- restrict the choice for the user to select from a predefined set of values
+enum userRole {
+  ADMIN,
+  USER,
+  GUEST,
+  STAFF,
+  CE0,
+  CM0,
+}
+
+const user1 =  userRole.ADMIN;
 
 
