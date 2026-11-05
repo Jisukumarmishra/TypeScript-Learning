@@ -20,3 +20,20 @@ users.push({ name: "Jisu", age: 10, isAdmin: true }); // valid
 const cities: readonly string[] = ["Delhi", "Motihari", "patna"];
 cities.push("Mumbai"); // Error: Property 'push' does not exist on type 'readonly string[]
 
+// multidimensional array in typescript :-- array that can have multiple dimensions
+const table: number[][] = [
+  [1,2,3],
+  [4,5,6],
+]
+
+
+// tuple in typescript :-- array that can have multiple types of data
+let userTuple:[string, number, boolean,]
+
+userTuple = ["Jisu", 21, true]
+userTuple = [21, "Jisu", true] // order matter
+
+let userInfo:[string, number, boolean, string?];
+userInfo = ["Jisu", 21, true]
+
+const location: readonly [number, number] = [19.0760, 72.8777]; // readonly tuple
