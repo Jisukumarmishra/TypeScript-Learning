@@ -37,3 +37,10 @@ let userInfo:[string, number, boolean, string?];
 userInfo = ["Jisu", 21, true]
 
 const location: readonly [number, number] = [19.0760, 72.8777]; // readonly tuple
+
+// named tuple in typescript :-- tuple that can have names for each element
+
+const userDetails: [name: string, age: number, isAdmin: boolean, location?: string] = ["Jisu", 21, true, "Delhi"]; // more preferred way to define tuple in typescript
+
+
+
