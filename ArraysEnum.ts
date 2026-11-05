@@ -55,3 +55,45 @@ enum userRole {
 const user1 =  userRole.ADMIN;
 
 
+// autoincrement value in the enum
+enum Status {
+  PENDING = 100,
+  SERVED, // 101
+  IN_PROGRESS,// 102
+  COMPLETED,// 103
+  CANCELLED,// 104
+}
+
+enum userRole {
+  DEVELOPER = "DEVELOPER",
+  DESIGNER = "DESIGNER",
+  FINANCE = "FINANCE",
+  MARKETING = "MARKETING",
+  MANAGEMENT = "MANAGEMENT",
+}
+
+function getUserRole(role: userRole) {
+  console.log(`User role is: ${role}`);
+}
+
+getUserRole(userRole.DEVELOPER); // Output: User role is: DEVELOPER 
+getUserRole("DEVELOPER"); // Error: Argument of type '"DEVELOPER"' is not assignable to parameter of type 'userRole'.
+
+// hetrogeneous enum :- enum that can have both string and number values
+// not preferrable
+enum RandomEnum {
+  id = 1,
+  NAME = "JISU"
+}
+
+const enum Sugars {
+  low = 1,
+  medium = 2,
+  hight = 3,
+}
+
+const s = Sugars.low;
+
+let t: [string, number] = ["Jisu", 21];
+t.push("harsh"); // valid
+
